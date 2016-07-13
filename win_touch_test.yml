@@ -1,0 +1,9 @@
+---
+- name: Touch Test
+  hosts: all
+  become: True
+  tasks:
+  - name: Touch test
+    win_file:
+      path: 'C:\demo_touch'
+      state: touch
